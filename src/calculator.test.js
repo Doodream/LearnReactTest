@@ -1,12 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
 import { add, multiplication, minus ,divide } from './calculator'
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByRole('link', { name : "리액트 배우기" });
-  expect(linkElement).toBeInTheDocument();
-});
 
 describe('사칙 연산 테스트', ()=>{
   const randomNumber1 = Math.round(Math.random() * 10)
